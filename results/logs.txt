@@ -1,38 +1,42 @@
-Awk JSON.awk gawk	TIMEOUT	n_structure_open_array_object.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_overlong_sequence_6_bytes.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_real_underflow.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_and_escape_valid.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_utf16BE_no_BOM.json
-Awk JSON.awk gawk	TIMEOUT	n_structure_100000_opening_arrays.json
-Awk JSON.awk gawk	SHOULD_HAVE_FAILED	n_structure_no_data.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_UTF8_surrogate_U+D800.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_UTF-8_invalid_sequence.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_invalid_utf-8.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_iso_latin_1.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_lone_utf8_continuation_byte.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_overlong_sequence_6_bytes_null.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_huge_exp.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_pair.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_overlong_sequence_2_bytes.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_utf16LE_no_BOM.json
-Awk JSON.awk gawk	IMPLEMENTATION_FAIL	i_string_truncated-utf-8.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_structure_UTF-8_BOM_empty_object.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
-Awk JSON.awk gawk	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json
+jacon	SHOULD_HAVE_FAILED	n_multidigit_number_then_00.json
+jacon	CRASH	n_structure_open_array_object.json
+jacon	IMPLEMENTATION_PASS	i_number_real_pos_overflow.json
+jacon	IMPLEMENTATION_PASS	i_string_overlong_sequence_6_bytes.json
+jacon	IMPLEMENTATION_PASS	i_number_real_underflow.json
+jacon	IMPLEMENTATION_PASS	i_string_1st_valid_surrogate_2nd_invalid.json
+jacon	IMPLEMENTATION_PASS	i_string_not_in_unicode_range.json
+jacon	IMPLEMENTATION_PASS	i_object_key_lone_2nd_surrogate.json
+jacon	IMPLEMENTATION_PASS	i_string_inverted_surrogates_U+1D11E.json
+jacon	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_and_escape_valid.json
+jacon	SHOULD_HAVE_FAILED	n_string_invalid_utf8_after_escape.json
+jacon	SHOULD_HAVE_FAILED	n_string_unescaped_tab.json
+jacon	IMPLEMENTATION_FAIL	i_string_utf16BE_no_BOM.json
+jacon	CRASH	n_structure_100000_opening_arrays.json
+jacon	SHOULD_HAVE_FAILED	n_string_unescaped_newline.json
+jacon	IMPLEMENTATION_PASS	i_string_1st_surrogate_but_2nd_missing.json
+jacon	IMPLEMENTATION_PASS	i_string_UTF8_surrogate_U+D800.json
+jacon	IMPLEMENTATION_PASS	i_string_invalid_surrogate.json
+jacon	IMPLEMENTATION_PASS	i_structure_500_nested_arrays.json
+jacon	IMPLEMENTATION_PASS	i_string_UTF-8_invalid_sequence.json
+jacon	IMPLEMENTATION_PASS	i_number_real_neg_overflow.json
+jacon	IMPLEMENTATION_PASS	i_string_invalid_lonely_surrogate.json
+jacon	IMPLEMENTATION_PASS	i_number_too_big_pos_int.json
+jacon	IMPLEMENTATION_PASS	i_string_invalid_utf-8.json
+jacon	IMPLEMENTATION_PASS	i_string_iso_latin_1.json
+jacon	IMPLEMENTATION_PASS	i_string_lone_utf8_continuation_byte.json
+jacon	IMPLEMENTATION_PASS	i_string_overlong_sequence_6_bytes_null.json
+jacon	IMPLEMENTATION_PASS	i_number_huge_exp.json
+jacon	IMPLEMENTATION_PASS	i_string_incomplete_surrogate_pair.json
+jacon	IMPLEMENTATION_FAIL	i_string_UTF-16LE_with_BOM.json
+jacon	IMPLEMENTATION_PASS	i_string_overlong_sequence_2_bytes.json
+jacon	IMPLEMENTATION_PASS	i_string_incomplete_surrogates_escape_valid.json
+jacon	IMPLEMENTATION_PASS	i_string_lone_second_surrogate.json
+jacon	IMPLEMENTATION_PASS	i_number_neg_int_huge_exp.json
+jacon	IMPLEMENTATION_PASS	i_number_too_big_neg_int.json
+jacon	IMPLEMENTATION_FAIL	i_string_utf16LE_no_BOM.json
+jacon	IMPLEMENTATION_PASS	i_string_truncated-utf-8.json
+jacon	SHOULD_HAVE_FAILED	n_string_escaped_emoji.json
+jacon	IMPLEMENTATION_PASS	i_number_very_big_negative_int.json
+jacon	IMPLEMENTATION_FAIL	i_structure_UTF-8_BOM_empty_object.json
+jacon	IMPLEMENTATION_PASS	i_number_pos_double_huge_exp.json
+jacon	IMPLEMENTATION_PASS	i_number_double_huge_neg_exp.json

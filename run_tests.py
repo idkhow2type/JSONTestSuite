@@ -23,7 +23,9 @@ BAD_CPU_TYPE = 86
 programs = {}
 
 
-def run_tests(program_list, restrict_to_path=None, restrict_to_program=None):
+def run_tests(
+    program_list, program_dir=None, restrict_to_path=None, restrict_to_program=None
+):
     global programs
     with open(program_list) as f:
         programs = json.load(f)
@@ -46,7 +48,8 @@ def run_tests(program_list, restrict_to_path=None, restrict_to_program=None):
         url = d["url"]
         commands = d["commands"]
         commands[-1] = os.path.join(
-            os.path.join(os.path.dirname(program_list), "parsers"), commands[-1]
+            program_dir or os.path.join(os.path.dirname(program_list), "parsers"),
+            commands[-1],
         )
         setup = d.get("setup")
         if setup != None:
@@ -474,6 +477,7 @@ if __name__ == "__main__":
         type=str,
         default=os.path.join(BASE_DIR, "programs.json"),
     )
+    parser.add_argument("program_dir", nargs="?", type=str, default=None)
     parser.add_argument("restrict_to_path", nargs="?", type=str, default=None)
     parser.add_argument(
         "--filter",
@@ -486,7 +490,12 @@ if __name__ == "__main__":
 
     # args.restrict_to_program = ["C ConcreteServer"]
 
-    run_tests(args.program_list, args.restrict_to_path, args.restrict_to_program)
+    run_tests(
+        args.program_list,
+        args.program_dir,
+        args.restrict_to_path,
+        args.restrict_to_program,
+    )
 
     generate_report(
         os.path.join(BASE_DIR, "results/parsing.html"),
